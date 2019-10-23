@@ -33,15 +33,14 @@ def list_of_directors(source)
 end
  
 def total_gross(source)
-  # total = 0
-  # index = 0
-  # while index < directors_totals(source).length do
-  #   list_directors = list_of_directors(source)[index]
-  #   total += directors_totals(source)[list_directors]
-  #   index+=1
-  # end
-  # total
- pp directors_totals(source)["Stephen Spielberg"]
+  total = 0
+  index = 0
+  while index < source.length do
+    list_directors = list_of_directors(source)[index]
+    total += directors_totals(source)[list_directors]
+    index+=1
+  end
+  total
 end
 
 
